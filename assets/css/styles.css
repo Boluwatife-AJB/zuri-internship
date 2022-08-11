@@ -1,12 +1,23 @@
-@import url("http://fonts.cdnfonts.com/css/averta-blackitalic");
+@font-face {
+  font-family: AvertaRegular;
+  src: url(Averta.a4626f6d.woff) format("woff");
+}
+@font-face {
+  font-family: AvertaSemiBold;
+  src: url(Averta-Semibold.aaa9584a.woff) format("woff");
+}
+@font-face {
+  font-family: AvertaBold;
+  src: url(Averta-Bold.8033efc0.woff) format("woff");
+}
 body {
-  font-family: "Averta-Regular", sans-serif !important;
+  font-family: "AvertaRegular", sans-serif !important;
+  color: #514949;
 }
 
 .header-btn {
   background: #e7332b;
   border-radius: 0;
-  margin-left: 1.5rem;
 }
 .header-btn:hover {
   border: #e7332b !important;
@@ -22,5 +33,24 @@ body {
 }
 
 .hero-section h1 {
+  font-family: "AvertaBold", sans-serif;
   font-size: 2rem;
+}
+.hero-section p {
+  font-size: 0.95rem;
+}
+.hero-section a {
+  font-size: 1rem;
+  background-color: #e7332b;
+  color: #fff;
+  padding: 0.68rem 1.75rem;
+  border: 2px solid #e7332b;
+  border: 2px solid var(--red);
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+}
+
+.about-section .about__link {
+  color: #e7332b;
+  font-family: "AvertaSemiBold";
 }
